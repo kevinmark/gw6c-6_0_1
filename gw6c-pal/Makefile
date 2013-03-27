@@ -25,6 +25,7 @@ OUT_INC_DIR   :=$(PWD)/out_inc
 LIB_NAME      :=libgw6cpal.a
 GW6CPAL_LIB   :=${OUT_LIB_DIR}/${LIB_NAME}
 PLATFORM      :=$(shell [ -z "$(platform)" ] && uname | tr "[A-Z]" "[a-z]" || echo "$(platform)" )
+EXTRA_CFLAGS  :=$(CFLAGSALL)
 
 SUPPORTED_PLATFORMS=linux netbsd freebsd openbsd darwin sunos dongle6
 CC=$(CROSS_COMPILE)gcc

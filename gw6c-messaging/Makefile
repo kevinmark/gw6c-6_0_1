@@ -14,6 +14,8 @@ BIN_DIR=bin
 LIB_DIR=lib
 INC_DIR=gw6cmessaging
 TARGET=$(LIB_DIR)/libgw6cmessaging.a
+EXTRA_CFLAGS=$(CFLAGSALL)
+EXTRA_CXXFLAGS=$(CXXFLAGSALL)
 
 GW6CPAL=../gw6c-pal
 GW6CPALINC_DIR=$(GW6CPAL)/out_inc
