@@ -6,11 +6,11 @@ to the version could be cross compiled
 
 ins :  ( make project in tspc-advanced/ )
 make cleanall  (not make clean)
-make all CROSS_COMPILE=mipsel-linux- 
-     OPENSSL_INCDIR=/path/to/tomatoraf/release/src-rt/router/openssl/include 
-     CRYPTO_LIBDIR=/path/to/tomatoraf/release/src-rt/router/openssl
-     CFLAGSALL="-Wall -g -O2"
-     CXXFLAGSALL="-Wall -g -O2"
+make all CROSS_COMPILE=mipsel-linux- \
+     OPENSSL_INCDIR=/path/to/tomatoraf/release/src-rt/router/openssl/include \
+     CRYPTO_LIBDIR=/path/to/tomatoraf/release/src-rt/router/openssl \
+     CFLAGSALL="-Wall -g" \
+     CXXFLAGSALL="-Wall -g"
 
 ===============README EOF==================
 
