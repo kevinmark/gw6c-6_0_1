@@ -9,7 +9,10 @@ make cleanall  (not make clean)
 make all CROSS_COMPILE=mipsel-linux- \
      OPENSSL_INCDIR=/path/to/tomatoraf/release/src-rt/router/openssl/include \
      CRYPTO_LIBDIR=/path/to/tomatoraf/release/src-rt/router/openssl \
-     DEBUG=1
+     CFLAGSALL="-Wall -g" \
+     CXXFLAGSALL="-Wall -g" \     
+     DEBUG=1  
+     ( bin/gw6c can't be strip )
 
 ===============README EOF==================
 
