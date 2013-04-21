@@ -15,6 +15,7 @@
 // **************************************************************************
 #include <gw6cmessaging/servermsgsender.h>
 #include <assert.h>
+#include <stddef.h>
 
 
 namespace gw6cmessaging
