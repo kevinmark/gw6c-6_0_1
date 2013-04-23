@@ -74,7 +74,7 @@ Display 1 "Script: " `basename $0`
 
 ifconfig=/sbin/ifconfig
 route=/sbin/route
-ipconfig=/sbin/ip
+ipconfig=/usr/sbin/ip
 rtadvd=/usr/sbin/radvd
 rtadvd_pid=/var/run/radvd.pid
 rtadvdconfigfilename=gogoc-rtadvd.conf

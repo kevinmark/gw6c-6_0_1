@@ -31,6 +31,7 @@ SUPPORTED_PLATFORMS=linux netbsd freebsd openbsd darwin sunos dongle6
 CC=$(CROSS_COMPILE)gcc
 AR=$(CROSS_COMPILE)ar
 
+CFLAGS=$(EXTRA_CFLAGS)
 
 # Export these variables to sub-makes.
 export PLATFORM PLATFORM_DIR OBJS_DIR DEFS_DIR OUT_INC_DIR CC DEBUG
