@@ -149,7 +149,7 @@ if [ X"${TSP_OPERATION}" = X"TSP_TUNNEL_TEARDOWN" ]; then
     $ifconfig $TSP_TUNNEL_INTERFACE >/dev/null 2>/dev/null
     if [ $? -eq 0 ]; then
 
-      Delete interface IPv6 configuration.
+      #Delete interface IPv6 configuration.
       PREF=`echo $TSP_CLIENT_ADDRESS_IPV6 | sed "s/:0*/:/g" |cut -d : -f1-2`
       OLDADDR=`$ifconfig $TSP_TUNNEL_INTERFACE | grep "inet6.* $PREF" | sed -e "s/^.*inet6 addr: //" -e "s/ Scope.*\$//"`
       if [ ! -z $OLDADDR ]; then
@@ -162,7 +162,7 @@ if [ X"${TSP_OPERATION}" = X"TSP_TUNNEL_TEARDOWN" ]; then
   fi
   
 
-  Display 1 Tunnel tear down completed.
+  #Display 1 Tunnel tear down completed.
 
   exit 0
 fi
