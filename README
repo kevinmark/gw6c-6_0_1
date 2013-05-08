@@ -5,7 +5,7 @@ modified Gateway6 Client v6.0-RELEASE
 edited from gw6c-6_0-RELEASE-src.tar 
 to the version could be cross compiled
 
-mips :
+mips : ( make project in tspc-advanced/ )
 make all CROSS_COMPILE=mipsel-linux- \
      OPENSSL_INCDIR=/path/to/tomatoraf/release/src-rt/router/openssl/include \
      CRYPTO_LIBDIR=/path/to/tomatoraf/release/src-rt/router/openssl
