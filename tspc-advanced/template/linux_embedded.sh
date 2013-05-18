@@ -23,7 +23,9 @@ KillProcess()
          echo killing $*
       fi
    fi
-   PID=`ps axww | grep $1 | grep -v grep | awk '{ print $1;}'`
+   #PID=`ps axww | grep $1 | grep -v grep | awk '{ print $1;}'`
+   #PID=`/opt/bin/ps aux| grep $1 | grep -v grep | awk '{ print \$2;}'`
+   PID=`/bin/ps | grep radvd | grep -v grep | awk '{ print \$1;}'`
    echo $PID
    if [ ! -z $PID ]; then
       kill $PID
