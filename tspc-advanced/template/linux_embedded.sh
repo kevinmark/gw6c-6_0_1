@@ -257,11 +257,14 @@ if [ X"${TSP_HOST_TYPE}" = X"router" ]; then
 interface $TSP_HOME_INTERFACE
 {
   AdvSendAdvert on;
-  AdvLinkMTU 1280;
+  MinRtrAdvInterval 30;
+  MaxRtrAdvInterval 100;
+  AdvLinkMTU 1500;
   prefix $TSP_PREFIX::/64
   {
     AdvOnLink on;
     AdvAutonomous on;
+    AdvRouterAddr on;
   };
 };
 EOF
